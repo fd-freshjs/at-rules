@@ -1,9 +1,50 @@
+@import url(./reset.css);
+@font-face {
+  font-family: "Dongle";
+  src: url("./../fonts/Dongle-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "DongleBold";
+  src: url("./../fonts/Dongle-Bold.ttf") format("opentype");
+}
+
+:root {
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  flex-flow: column nowrap;
   background-color: antiquewhite;
+  min-height: 100vh;
+  font-family: Neonderthaw, sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  margin-bottom: auto;
+
+  columns: 14em 4;
+  column-rule: 5px solid red;
+  column-gap: 60px;
+
+  text-align: justify;
+}
+
+main h2 {
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: center;
+
+  column-span: all;
 }
 
 .page-header {
@@ -12,6 +53,8 @@ body {
   align-items: center;
   background-color: orange;
   padding: 10px;
+  font-family: DongleBold;
+  font-size: 2em;
 }
 
 .logo {
@@ -20,7 +63,7 @@ body {
   color: dodgerblue;
 }
 
-.nav-list{ 
+.nav-list {
   display: flex;
 }
 
@@ -67,17 +110,12 @@ body {
   text-transform: uppercase;
 }
 
-.avatar{ 
+.avatar {
   max-width: 50%;
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .page-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  
   display: flex;
   justify-content: space-between;
 
