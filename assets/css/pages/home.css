@@ -1,0 +1,17 @@
+@import url(../components/footer.css);
+@import url(../components/header.css);
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  margin-bottom: auto;
+
+  columns: 14em 4;
+  column-rule: 5px solid red;
+  column-gap: 60px;
+
+  text-align: justify;
+}
