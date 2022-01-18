@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url(./breakpoints.css);
 @import url(./print.css) print;
 
 @font-face {
@@ -9,9 +10,6 @@
 @font-face {
   font-family: "DongleBold";
   src: url("./../fonts/Dongle-Bold.ttf") format("opentype");
-}
-
-:root {
 }
 
 * {
