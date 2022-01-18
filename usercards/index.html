@@ -11,16 +11,30 @@
   </head>
   <body>
     <main>
+      <h2>User cards</h2>
       <section class="card-section">
-        <h2>User cards</h2>
         <article class="card">
-          <img
-            class="avatar"
-            src="https://wac-cdn.atlassian.com/ru/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=167"
-            alt="user name"
-          />
+          <div class="avatar-wrapper">
+            <img
+              class="avatar"
+              src="https://wac-cdn.atlassian.com/ru/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=167"
+              alt="user name"
+            />
+          </div>
           <div class="card-content">
-            <h4>User name</h4>
+            <div>
+              <h4 class="username">John Doe</h4>
+              <div>@johndoe</div>
+            </div>
+
+            <div class="user-info">
+              <div class="user-info-group">
+                <span>shots</span><span>250</span>
+              </div>
+              <div class="user-info-group">
+                <span>followers</span><span>1689</span>
+              </div>
+            </div>
           </div>
         </article>
       </section>
