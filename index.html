@@ -10,33 +10,35 @@
   </head>
   <body class="body">
     <div class="image-wrapper">
-    <picture>
-      <source
-        class="resp-img"
+      <picture>
+        <source
+          class="resp-img"
+          alt="resposive img"
+          srcset="./assets/images/4k.webp"
+          type="image/webp"
+          media="(min-width: 1200px)"
+        />
+        <source
+          class="resp-img"
+          alt="resposive img"
+          srcset="./assets/images/4k.png"
+          type="image/png"
+          media="(min-width: 512px)"
+        />
+        <source
+          class="resp-img"
+          alt="resposive img"
+          srcset="./assets/images/800w.png"
+          type="image/png"
+          media="(min-width: 512px) and (mix-resolution: 200dpi)"
+        />
 
-        alt="resposive img"
-        
-        srcset="./assets/images/4k.webp"
-        type="image/webp"
-        media="(min-width: 1200px)"
-      />
-      <source
-        class="resp-img"
-
-        alt="resposive img"
-        
-        srcset="./assets/images/4k.png"
-        type="image/png"
-        media="(min-width: 512px)"
-      />
-
-      <img
-        class="resp-img"
-
-        src="./assets/images/512w.jpg"
-        alt="resposive img"
-      />
-    </picture>
-  </div>
+        <img
+          class="resp-img"
+          src="./assets/images/512w.jpg"
+          alt="resposive img"
+        />
+      </picture>
+    </div>
   </body>
 </html>
