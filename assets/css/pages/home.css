@@ -1,17 +1,15 @@
-@import url(../components/footer.css);
-@import url(../components/header.css);
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  flex: 1;
-  line-height: 1.5em;
-  font-size: 1.3em;
-  margin-bottom: auto;
+body {
+  min-height: 300vh;
+}
 
-  columns: 14em 4;
-  column-rule: 5px solid red;
-  column-gap: 60px;
+.resp-img{
+  display: block;
+  width: 100%;
+  height: 100vh;
 
-  text-align: justify;
+  background-color: blueviolet;
+
+  object-fit: cover;
+  object-position: center;
 }
