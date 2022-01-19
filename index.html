@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./assets/css/pages/home.css">
+    <link rel="stylesheet" href="./assets/css/pages/home.css" />
   </head>
   <body class="body">
-    <img class="resp-img" src="./assets/images/4k.jpg" alt="resposive img">
+    <div class="image-wrapper">
+    <picture>
+      <source
+        class="resp-img"
+
+        alt="resposive img"
+        
+        srcset="./assets/images/4k.webp"
+        type="image/webp"
+        media="(min-width: 1200px)"
+      />
+      <source
+        class="resp-img"
+
+        alt="resposive img"
+        
+        srcset="./assets/images/4k.png"
+        type="image/png"
+        media="(min-width: 512px)"
+      />
+
+      <img
+        class="resp-img"
+
+        src="./assets/images/512w.jpg"
+        alt="resposive img"
+      />
+    </picture>
+  </div>
   </body>
 </html>
