@@ -1,11 +1,6 @@
 @import url(../components/footer.css);
 @import url(../components/header.css);
 
-:root {
-  --sm-media: 576px;
-  --md-media: 768px;
-}
-
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -15,23 +10,4 @@ main {
   margin-bottom: auto;
 
   text-align: justify;
-}
-
-@media screen and (min-width: 0px) {
-  .col-sm-hide {
-    display: unset;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .col-sm-hide {
-    display: none;
-  }
-}
-
-
-@media screen and (min-width: 768px) {
-  .col-sm-hide {
-    display: unset;
-  }
 }
