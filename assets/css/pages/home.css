@@ -7,10 +7,15 @@ body {
 
 .resp-img{
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 
   background-color: blueviolet;
 
   object-fit: cover;
-  object-position: center;
+  /* object-position: center; */
+}
+
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
