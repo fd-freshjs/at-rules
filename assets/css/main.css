@@ -20,6 +20,11 @@
 
 .page-header {
   min-height: 700px;
+  background-color: var(--primary-back-color);
+}
+
+.nav-bar {
+  padding-top: 40px;
 }
 
 .logo-wrapper {
@@ -31,7 +36,9 @@
 }
 
 .h-image {
+  display: block;
   max-width: 357px;
+  margin: 0 auto;
 }
 
 .h-nav {
