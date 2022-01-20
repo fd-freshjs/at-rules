@@ -5,11 +5,40 @@
 }
 
 :root {
-  --primary-color: #34547A;
-  --primary-back-color: #EEEFF1;
-  --secondary-back-color: #EEEFF1;
+  --primary-color: #34547a;
+  --primary-back-color: #eeeff1;
+  --secondary-back-color: #ffffff;
 
   --primary-font-family: Roboto;
   font-family: var(--primary-font-family);
   font-size: 16px;
+}
+
+.my-border {
+  border: 5px solid red;
+}
+
+.page-header {
+  min-height: 700px;
+}
+
+.logo-wrapper {
+  max-width: 25%;
+}
+
+.logo-img {
+  max-width: 96px;
+}
+
+.h-image {
+  max-width: 357px;
+}
+
+.h-nav {
+  min-height: 60px;
+}
+
+.header-content {
+  flex-grow: 1;
+  align-items: center;
 }
