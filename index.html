@@ -6,67 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./assets/css/pages/home.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css"> -->
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .elem {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
   </head>
-  <body class="body">
-    <header class="page-header">
-      <a class="logo" href="#">Logo</a>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="/contacts">Contacts</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      <div class="row">
-
-        <nav class="col-md-3 d-sm-none d-md-block">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
-          </ul>
-        </nav>
-
-        <section class="col">
-          <h2>News</h2>
-          <article>
-            <h3>Article 1 heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus eligendi optio, aperiam sed libero ullam est id blanditiis, eius earum nesciunt pariatur illum? Quos quasi esse voluptates odit distinctio tempore iusto numquam minus! Quod velit error, harum sequi perferendis qui magnam tenetur reprehenderit ab debitis dolores expedita suscipit doloremque? Repudiandae repellat aliquid iusto minus debitis maxime, placeat provident dolorem voluptates! Sit consequuntur doloremque itaque ad repudiandae recusandae sapiente veritatis debitis ut optio at deleniti quisquam, obcaecati officiis dolorem reprehenderit minima eius atque nesciunt? Sed a amet aut, magni id nihil sint reiciendis neque quae, officia magnam quisquam natus qui!</p>
-          </article>
-          <article>
-            <h3>Article 2 heading</h3>
-            <p>Quia obcaecati illum quaerat odit. Corporis pariatur unde vitae repellendus, dicta iure impedit veniam aliquam. Praesentium dolor veritatis deleniti vero, doloremque ducimus accusamus libero aliquid maxime harum error amet aperiam aspernatur consectetur laudantium quam eum dignissimos nostrum aut reprehenderit temporibus vitae optio dolore! Esse officia omnis dolor amet facere inventore, recusandae porro repudiandae perspiciatis consequatur voluptatibus ex explicabo quo ut delectus nostrum, quis eius minus necessitatibus! Fugit temporibus distinctio quam dolore numquam esse velit unde, earum, neque atque similique ex at voluptatibus voluptates, ipsam debitis natus quae accusantium! Tenetur, inventore! Rem culpa molestias in facilis ullam quod odio quo consequatur!</p>
-          </article>
-
-          <article>
-            <h3>Article 3 heading</h3>
-            <p>Dolorem voluptatibus perferendis totam quasi earum, nostrum ipsam reiciendis placeat, exercitationem cumque officia fuga atque necessitatibus, quod magnam rem praesentium quidem! Maiores mollitia vitae velit voluptatibus consequatur. Nostrum in expedita sed dolore numquam nisi, illo, quam doloribus provident culpa iste impedit ipsum asperiores, est molestiae autem suscipit accusamus quos corporis ratione! Architecto dolor minima voluptas fugit molestias, amet assumenda ab aspernatur, nobis doloribus quis dolorem et velit itaque dolores asperiores at autem odio vel doloremque hic, iure nostrum perspiciatis error! Quod animi aliquam quasi doloribus dolores rem enim adipisci fugit saepe dolore numquam explicabo iusto quaerat, voluptatibus distinctio similique ea?</p>
-          </article>
-          <article>
-            <h3>Article 4 heading</h3>
-            <p>Unde iure odit temporibus explicabo ex eos impedit nostrum, corporis vel praesentium hic optio. Dolor, ipsum reprehenderit! Quam, expedita voluptatum tenetur hic mollitia nobis autem quos est dolorum error optio iure illum facere esse porro ad provident fugit culpa minus! Ex, tenetur, aliquid provident voluptas architecto quod repellat quo, illo delectus dolore quis? Obcaecati repellendus neque possimus sint, dignissimos, cupiditate odit ipsam beatae alias similique omnis vero recusandae ipsa error, repellat eligendi placeat sequi ut perspiciatis rerum sunt delectus ducimus. Consequatur magni error tempore ipsum aut et earum recusandae facere nobis enim sapiente, mollitia dolore laudantium praesentium pariatur. Tenetur, accusamus?</p>
-          </article>
-        </section>
-
-        <aside class="col-lg-2 col-md-12">
-          Advertisement
-        </aside>
-
+  <body>
+    
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="elem col col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, fugiat?</div>
+          <div class="elem col col-md-5">2</div>
+          <div class="elem col-3">4</div>
+          <div class="elem col-5">3</div>
+        </div>
       </div>
-    </main>
-    <footer class="page-footer">Copyright 2022 <a href="/">My site</a></footer>
+      <!-- 
+        col - растет или сужается в зависимости от контента (flex grow 1, flex shrink 1)
+        col-3 - минимум и максимум размера заданы (flex-basis, flex grow 0, flex shrink 0)
+        col col-sm-6 col-md-3 - на разных экранах разные ограничения размеров (flex-basis, flex grow 0, flex shrink 0 + media queries)
+       -->
+    </section>
+        
   </body>
 </html>
