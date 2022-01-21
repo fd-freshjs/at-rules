@@ -1,0 +1,30 @@
+
+.my-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+.my-container * {
+  box-sizing: border-box;
+}
+
+.my-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.my-col {
+  flex: 1 1 0%;
+}
+
+.my-row > * {
+  width: 100%;
+  flex-shrink: 0;
+  max-width: 100%;
+}
