@@ -49,3 +49,49 @@
   flex-grow: 1;
   align-items: center;
 }
+
+.header-text {
+  max-width: 80%;
+}
+
+.skills-section {
+  min-height: 700px;
+}
+
+.skills {
+  min-width: 80%;
+}
+
+.skill-bar,
+.skill-progress {
+  height: 0.5em;
+}
+
+.skill-bar {
+  background-color: rgb(194, 192, 192);
+  max-width: 80%;
+  width: 100%;
+}
+
+.skill-progress {
+  background-color: var(--primary-color);
+  max-width: 100%;
+  width: 80%;
+}
+
+.photo {
+  width: 100%;
+  max-width: 555px;
+}
+
+@media screen and (max-width: 768px) {
+  .photo {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .photo {
+    max-width: 320px;
+  }
+}

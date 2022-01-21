@@ -11,34 +11,38 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <main>
-      <header class="page-header d-flex">
-        <div class="container d-flex flex-column">
-          <div
-            class="row justify-content-center justify-content-md-between nav-bar"
+    <header class="page-header d-flex">
+      <div class="container d-flex flex-column">
+        <div
+          class="row justify-content-center justify-content-md-between nav-bar"
+        >
+          <a class="col-12 col-md-5 logo-wrapper" href="/"
+            ><img class="logo-img" src="./assets/img/logo.svg" alt="logo"
+          /></a>
+
+          <nav
+            class="col-12 col-md-7 px-2 d-flex justify-content-center justify-content-md-start align-items-center h-nav"
           >
-            <a class="col col-md-5 logo-wrapper" href="/"
-              ><img class="logo-img" src="./assets/img/logo.svg" alt="logo"
-            /></a>
+            <ul class="d-flex">
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+            </ul>
+          </nav>
+        </div>
 
-            <nav
-              class="col col-12 col-md-7 px-2 d-flex align-items-center h-nav"
-            >
-              <ul class="d-flex">
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-              </ul>
-            </nav>
+        <div class="row d-flex flex-column flex-md-row header-content">
+          <div class="col px-md-6">
+            <img
+              class="h-image"
+              src="./assets/img/header-image.svg"
+              alt="header laptop"
+            />
           </div>
-
-          <div class="row d-flex flex-column flex-md-row header-content">
-            <div class="col px-md-6">
-              <img class="h-image" src="./assets/img/header-image.svg" alt="header laptop" />
-            </div>
-            <section class="col px-md-6">
+          <section class="col px-md-6">
+            <div class="header-text">
               <h1>Дизайн и верстка</h1>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -47,14 +51,52 @@
                 inventore odio esse hic repudiandae dolores ratione.
               </p>
               <a href="">Написать мне</a>
-            </section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="skills-section d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="skills">
+                <h2>Мои навыки</h2>
+                <div>
+                  <article class="skill">
+                    <h3>Adobe</h3>
+                    <div class="skill-bar">
+                      <div class="skill-progress"></div>
+                    </div>
+                  </article>
+                  <article class="skill">
+                    <h3>Adobe</h3>
+                    <div class="skill-bar">
+                      <div class="skill-progress"></div>
+                    </div>
+                  </article>
+                  <article class="skill">
+                    <h3>Adobe</h3>
+                    <div class="skill-bar">
+                      <div class="skill-progress"></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mt-5 mt-md-0 d-flex justify-content-center">
+              <img class="photo" src="./assets/img/photo.png" alt="photo" />
+            </div>
           </div>
         </div>
-      </header>
+      </section>
 
       <!-- <section></section> * 7 -->
-
-      <footer></footer>
     </main>
+    <footer></footer>
   </body>
 </html>
