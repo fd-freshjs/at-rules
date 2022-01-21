@@ -9,7 +9,7 @@
   --primary-back-color: #eeeff1;
   --secondary-back-color: #ffffff;
 
-  --primary-font-family: Roboto;
+  --primary-font-family: Roboto, sans-serif;
   font-family: var(--primary-font-family);
   font-size: 16px;
 }
