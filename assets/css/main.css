@@ -114,3 +114,66 @@
   margin-right: auto;
   aspect-ratio: 16/9;
 }
+
+.plates-section {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+}
+
+.plate-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.plate {
+  flex: 0 0 25%;
+ /*  max-width: 25vw;
+  width: 100%; */
+  min-height: 25vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.plate-row:nth-child(2n) .plate:nth-child(even),
+.plate-row:nth-child(2n+1) .plate:nth-child(odd) {
+  background-image: url(../img/plate1.png);
+}
+
+.plate-row:nth-child(2n+1) .plate:nth-child(even),
+.plate-row:nth-child(2n) .plate:nth-child(odd) {
+  background-image: url(../img/plate2.png);
+}
+
+@media screen and (min-width: 0px) {
+  .plate {
+    flex: 0 0 100%;
+    min-height: 50vw;
+  }
+
+  .plate-row {
+    flex-wrap: wrap;
+  }
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#burger-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#burger-input:checked + .burger-menu {
+  display: flex;
+}
