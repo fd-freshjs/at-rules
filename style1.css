@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+.form-container{
+    display:flex;
+    flex-flow: column wrap;
+    width: 1920px;
+    height: 762px;
+    background:#EEEFF1;
+    justify-content: center;
+    align-content: center;
+}
+.fish{
+    display:flex;
+    width: 540px;
+    height: 67px;
+    flex-flow: row wrap;
+    color: #727272;
+    text-align: center;
+    
+}
+h2{
+    width: 406px;
+    height: 30px;
+    size: 32px;
+    line-height: 37.5px;
+    margin-left: 200px;
+}
+.message{
+    width: 530px;
+    height: 175px;
+}
+.name , .email{
+    width: 255px;
+    height: 50px;
+    background: white;
+}
+.name-and-email{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sub{
+    min-width: 190px;
+    min-height: 55px;
+    background: #34547A;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+form{
+    text-align: center;
+}
