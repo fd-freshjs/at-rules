@@ -1,176 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <title>Column layout</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/my-grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header class="page-header d-flex">
-      <div class="container d-flex flex-column">
-        <div
-          class="row justify-content-center justify-content-md-between nav-bar"
-        >
-          <a class="col-12 col-md-5 logo-wrapper" href="/"
-            ><img class="logo-img" src="./assets/img/logo.svg" alt="logo"
-          /></a>
-
-          <nav
-            class="col-12 col-md-7 px-2 d-flex justify-content-center justify-content-md-start align-items-center h-nav"
-          >
-            <label for="burger-input">
-              <img src="" alt="" />
+    <header class="first-screen">
+      <div class="container">
+        <div class="row first-screen-first-row">
+          <div class="col-6 col-sm-6 col-md-12 col-lg-5 logo-wrapper">
+            <a class="link-logo" href="./index.html"
+              ><img
+                class="first-screen-logo"
+                src="./assets/imgs/WD.svg"
+                alt="logo"
+            /></a>
+          </div>
+          <nav class="col-6 col-sm-6 col-md-12 col-lg-7 d-flex align-items-center menu-nav">
+            <label for="burger-input" class="burger-label">
+              <img src="./assets/icons/menu.svg" alt="icon" />
             </label>
-            <input type="checkbox" id="burger-input" />
-            <ul class="burger-menu">
-              <li><a href="">Link</a></li>
-              <li><a href="">Link</a></li>
-              <li><a href="">Link</a></li>
-              <li><a href="">Link</a></li>
-              <li><a href="">Link</a></li>
+            <input type="checkbox" id="burger-input"/>
+            <ul class="menu-list">
+              <li><a class="link menu-link" href="#">ГЛАВНАЯ</a></li>
+              <li><a class="link menu-link" href="#skills">ОБ АВТОРЕ</a></li>
+              <li><a class="link menu-link" href="#projects">РАБОТЫ</a></li>
+              <li><a class="link menu-link" href="#video">ПРОЦЕСС</a></li>
+              <li><a class="link menu-link" href="#footer">КОНТАКТЫ</a></li>
             </ul>
           </nav>
         </div>
-
-        <div class="row d-flex flex-column flex-md-row header-content">
-          <div class="col px-md-6">
+        <div class="row">
+          <section
+            class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center"
+          >
             <img
-              class="h-image"
-              src="./assets/img/header-image.svg"
-              alt="header laptop"
+              class="first-screen-image"
+              src="./assets/imgs/Frame.svg"
+              alt="laptop"
             />
-          </div>
-          <section class="col px-md-6">
-            <div class="header-text">
-              <h1>Дизайн и верстка</h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis repellendus, dignissimos sapiente aspernatur quibusdam
-                nesciunt iure nostrum quasi officia, at iste consectetur
-                inventore odio esse hic repudiandae dolores ratione.
-              </p>
-              <a href="">Написать мне</a>
-            </div>
+          </section>
+          <section class="col-md-12 col-lg-6 header-text-wrapper">
+            <h1 class="header first-screen-header">Дизайн и верстка</h1>
+            <p class="paragraph first-screen-paragraph">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+            <a class="link button" href="#form">НАПИСАТЬ МНЕ</a>
           </section>
         </div>
       </div>
     </header>
     <main>
-      <section class="skills-section d-flex align-items-center">
+      <section class="about-me">
         <div class="container">
-          <div class="row">
-            <div
-              class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
-            >
-              <div class="skills">
-                <h2>Мои навыки</h2>
-                <div>
-                  <article class="skill">
-                    <h3>Adobe</h3>
-                    <div class="skill-bar">
-                      <div class="skill-progress"></div>
-                    </div>
-                  </article>
-                  <article class="skill">
-                    <h3>Adobe</h3>
-                    <div class="skill-bar">
-                      <div class="skill-progress"></div>
-                    </div>
-                  </article>
-                  <article class="skill">
-                    <h3>Adobe</h3>
-                    <div class="skill-bar">
-                      <div class="skill-progress"></div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-12 col-md-6 mt-5 mt-md-0 d-flex justify-content-center"
-            >
-              <img class="photo" src="./assets/img/photo.png" alt="photo" />
-            </div>
+          <div class="row justify-content-center">
+            <section class="col-lg-12 about-me-wrapper">
+              <h2 class="header">Обо мне</h2>
+              <p class="paragraph">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века.
+              </p>
+            </section>
           </div>
         </div>
       </section>
 
-      <section class="video-section d-flex align-items-center">
+      <section class="numbers">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="video-description">
-                <h2>Как я работаю</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  qui animi quia autem soluta sed, omnis architecto accusantium
-                  dignissimos consequuntur quaerat suscipit ipsum necessitatibus
-                  eos exercitationem. Repellendus, laborum? Iusto rerum, non
-                  inventore perferendis expedita nesciunt aut harum quae quam
-                  magnam!
-                </p>
+          <div class="row numbers-row">
+            <section class="col-lg-2 col-md-4 col-sm-6 numbers-item">
+              <img src="./assets/icons/icon1.png" alt="icon" />
+              <div class="numbers-text-wrapper">
+                <h3>40+</h3>
+                <p class="numbers-paragraph">проектов</p>
               </div>
-              <div class="d-flex">
-                <!-- <div>
-                  <img src="" alt="">
-                  <img />
-                </div> -->
-                <!-- <video src="https://www.youtube.com/watch?v=cd0xW9W8hqs"></video> -->
-                <iframe
-                  class="video"
-                  src="https://www.youtube.com/embed/cd0xW9W8hqs"
-                >
-                </iframe>
+            </section>
+            <section class="col-lg-2 col-md-4 col-sm-6 numbers-item">
+              <img src="./assets/icons/icon1.png" alt="icon" />
+              <div class="numbers-text-wrapper">
+                <h3>40+</h3>
+                <p class="numbers-paragraph">проектов</p>
               </div>
-            </div>
+            </section>
+            <section class="col-lg-2 col-md-4 col-sm-6 numbers-item">
+              <img src="./assets/icons/icon1.png" alt="icon" />
+              <div class="numbers-text-wrapper">
+                <h3>40+</h3>
+                <p class="numbers-paragraph">проектов</p>
+              </div>
+            </section>
+            <section class="col-lg-2 col-md-4 col-sm-6 numbers-item">
+              <img src="./assets/icons/icon1.png" alt="icon" />
+              <div class="numbers-text-wrapper">
+                <h3>40+</h3>
+                <p class="numbers-paragraph">проектов</p>
+              </div>
+            </section>
+            <section class="col-lg-2 col-md-4 col-sm-6 numbers-item">
+              <img src="./assets/icons/icon1.png" alt="icon" />
+              <div class="numbers-text-wrapper">
+                <h3>40+</h3>
+                <p class="numbers-paragraph">проектов</p>
+              </div>
+            </section>
+            <section class="col-lg-2 col-md-4 col-sm-6 numbers-item">
+              <img src="./assets/icons/icon1.png" alt="icon" />
+              <div class="numbers-text-wrapper">
+                <h3>40+</h3>
+                <p class="numbers-paragraph">проектов</p>
+              </div>
+            </section>
           </div>
         </div>
       </section>
 
-      <section class="plates-section">
-        <div class="plate-row">
-          <article class="plate">
-            <div class="ovelay"><img src="" alt="" class="eye-img" /></div>
+      <section id="skills">
+        <div class="container">
+          <div class="row">
+            <section class="col-md-6 d-flex flex-column justify-content-center skills-text-wrapper">
+              <h2 class="header">Мои навыки</h2>
+              <div>
+                <article>
+                  <p>Adobe Photoshop</p>
+                  <div class="bg-progress">
+                    <div class="progress"></div>
+                  </div>
+                </article>
+                <article>
+                  <p>Adobe Photoshop</p>
+                  <div class="bg-progress">
+                    <div class="progress"></div>
+                  </div>
+                </article>
+                <article>
+                  <p>Adobe Photoshop</p>
+                  <div class="bg-progress">
+                    <div class="progress"></div>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="col-md-6 d-flex flex-column justify-content-center">
+              <img class="skills-img" src="./assets/imgs/img3.jpg" alt="" />
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="video">
+        <div class="container">
+          <div class="row">
+            <section class="col-12 d-flex flex-column align-items-center">
+              <h2 class="header">Как я работаю</h2>
+              <p class="paragraph">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века.
+              </p>
+              <iframe
+                class="my-video"
+                src="https://www.youtube.com/embed/cd0xW9W8hqs"
+                frameborder="0"
+              ></iframe>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="projects-row">
+          <article class="projects-item">
+            <div class="overlay">
+              <img
+                class="projects-icon"
+                src="./assets/icons/icon2.svg"
+                alt="icon"
+              />
+            </div>
           </article>
-          <article class="plate">
-            <div class="ovelay"><img src="" alt="" class="eye-img" /></div>
+          <article class="projects-item">
+            <div class="overlay">
+              <img
+                class="projects-icon"
+                src="./assets/icons/icon2.svg"
+                alt="icon"
+              />
+            </div>
           </article>
-          <article class="plate">
-            <div class="ovelay"><img src="" alt="" class="eye-img" /></div>
+          <article class="projects-item">
+            <div class="overlay">
+              <img
+                class="projects-icon"
+                src="./assets/icons/icon2.svg"
+                alt="icon"
+              />
+            </div>
           </article>
-          <article class="plate">
-            <div class="ovelay"><img src="" alt="" class="eye-img" /></div>
+          <article class="projects-item">
+            <div class="overlay">
+              <img
+                class="projects-icon"
+                src="./assets/icons/icon2.svg"
+                alt="icon"
+              />
+            </div>
           </article>
         </div>
-        <div class="plate-row">
-          <article class="plate">
-            <div class="ovelay"><img src="" alt="" class="eye-img" /></div>
+        <div class="projects-row">
+          <article class="projects-item">
+            <div class="overlay">
+              <img
+                class="projects-icon"
+                src="./assets/icons/icon2.svg"
+                alt="icon"
+              />
+            </div>
           </article>
-          <article class="plate">
-            <div class="ovelay"><img src="" alt="" class="eye-img" /></div>
+          <article class="projects-item">
+            <div class="overlay">
+              <img
+                class="projects-icon"
+                src="./assets/icons/icon2.svg"
+                alt="icon"
+              />
+            </div>
           </article>
-          <article class="plate">
-            <div class="ovelay"><img src="" alt="" class="eye-img" /></div>
+          <article class="projects-item">
+            <div class="overlay">
+              <img
+                class="projects-icon"
+                src="./assets/icons/icon2.svg"
+                alt="icon"
+              />
+            </div>
           </article>
-          <article class="plate">
-            <div class="ovelay"><img src="" alt="" class="eye-img" /></div>
+          <article class="projects-item">
+            <div class="overlay">
+              <img
+                class="projects-icon"
+                src="./assets/icons/icon2.svg"
+                alt="icon"
+              />
+            </div>
           </article>
         </div>
       </section>
 
-      <!-- <section></section> * 7 -->
+      <section class="clients">
+        <div class="container">
+          <div class="row">
+            <section
+              class="col-lg-12 d-flex justify-content-center clients-wrapper"
+            >
+              <img src="./assets/imgs/clients1.png" alt="client" />
+              <img src="./assets/imgs/clients1.png" alt="client" />
+              <img src="./assets/imgs/clients1.png" alt="client" />
+              <img src="./assets/imgs/clients1.png" alt="client" />
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="form" id="form">
+        <div class="container">
+          <div class="row justify-content-center">
+            <section class="col-12 form-wrapper">
+              <h2 class="header">Хотите веб-сайт?</h2>
+              <p class="paragraph">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века.
+              </p>
+              <form action="" class="my-form">
+                <input
+                  class="my-form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  pattern="[A-Z][a-z]{3,20}"
+                />
+                <input
+                  class="my-form-input"
+                  type="email"
+                  name="email"
+                  placeholder="Ваш e-mail"
+                  pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+                />
+                <textarea
+                  class="my-form-input input-message"
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="8"
+                  placeholder="Сообщение"
+                ></textarea>
+                <button class="button form-button" type="submit">
+                  ОТПРАВИТЬ
+                </button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <section class="col-12 col-sm-6 footer-wrapper-first">
+            <h3 class="footer-header">Иванов Иван</h3>
+            <p>(с) 2018. Все права защищены.</p>
+          </section>
+          <section class="col-12 col-sm-6 footer-links footer-wrapper">
+            <a href="https://www.google.com/" target="_blank">
+              <img src="./assets/icons/vk.svg" alt="icon" />
+            </a>
+            <a href="https://www.google.com/" target="_blank">
+              <img src="./assets/icons/twitter.svg" alt="icon" />
+            </a>
+            <a href="https://www.google.com/" target="_blank">
+              <img src="./assets/icons/instagram.svg" alt="icon" />
+            </a>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
